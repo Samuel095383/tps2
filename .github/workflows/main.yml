@@ -19,7 +19,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          flutter-version: 'latest'
+          flutter-version: '3.41'
       - run: flutter pub get
       - run: flutter --version
   build_iOSApp:
@@ -35,7 +35,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          flutter-version: 'latest'
+          flutter-version: '3.41'
           # Removed dart-verion (typo) - Flutter 1.22.6 comes with its own Dart version
       - run: flutter pub get
       - run: flutter clean
@@ -64,7 +64,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          flutter-version: 'latest'
+          flutter-version: '3.41'
       - run: flutter pub get
       - run: flutter clean
       - run: flutter build apk --debug
